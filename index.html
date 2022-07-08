@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript HTML5 Tip Calculator Application</title>
+<link rel="stylesheet" href="Task.css">
+</head>
+</head>
+<body>
+    <div id="tip-calculator">
+        <h1>Tip Calculator Using Sliders</h1>
+        <form id="form">
+            <label for="bill" class="h3">
+              Enter the Amount:
+                <input type="number" id="bill" />
+            </label>
+            <label for="percentage" class="h3">
+             Tip Percentage: <span id="percentage-output"><span id="slideval">0%</span>
+               <input type="range" min="0" max="100" step="1" onchange="tipCalculate(this.value,'bill')" id="percentage"/>
+            </label>
+          </form>
+          <div id="output" class="h3">Tip Amount= <span id="tip"></span></div>
+          <div id="output1" class="h3">Total Amount=<span id="tot"></sapn></div>
+    </div>
+<script src="Task3.js"></script>
+  </body>
+</body>
+</html>
